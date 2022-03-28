@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="./static/header-logo.png" /></a>
+            </div>
+            <form action="/Predict" method="post" enctype="multipart/form-data">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="predict.html">Prediction</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Audio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"
+                            href="#">Upload-File</a><a class="dropdown-item" href="#">Live-Recording</a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Live-Recording-Second's-An</a>
+                    </div>
+                </li>
+                    
+                </ul>
+
+            </form>
+
+            <form action="/Login" method="post" enctype="multipart/form-data">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{url_for('login')}}"><span class="glyphicon glyphicon-user"></span> Admin</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+            </form>
+
+            </form>
+        </div>
+    </nav>
+
+    <div class="container body-sec">
+        <h3>🎁Amazon Product Review 🎁</h3>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+            <a href="https://www.nitorinfotech.com/"> nitorinfotech.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>

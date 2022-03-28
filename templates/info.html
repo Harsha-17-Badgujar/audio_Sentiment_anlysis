@@ -1,0 +1,90 @@
+<html style="background-image: url('product_review.jpg');">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body style="background-image:url(https://wallpaperaccess.com/full/3161112.png);background-size: 100% 100%">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-inverse ">
+        <div class="collapse navbar-collapse  container-fluid" id="navbarSupportedContent">
+            <!--<ul class="nav navbar-nav mr-auto" style="padding-top: 5px; font-size:18px">-->
+    
+                <form action="/Predict" method="post" enctype="multipart/form-data"></form>
+                <form action="/uploadcsv" method="post" enctype="multipart/form-data"></form>
+                <form action="/Audiouplod" method="post" enctype="multipart/form-data"></form>
+                <form action="/liverecording" method="post" enctype="multipart/form-data"></form>
+                <form action="/second_anysis" method="post" enctype="multipart/form-data"></form>
+    
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="{{url_for('info')}}">Home <span
+                                class="sr-only"></span></a>
+    
+                    </li>
+                </ul>
+    
+               
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle " href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Audio
+                        </a>
+    
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    
+                            <a class="dropdown-item "  href="{{url_for('Audiouplod')}}">Upload File</a>
+    
+                           
+                        </div>
+                        </form>
+                    </li>
+                </ul>
+    
+            
+            <!--</ul>-->
+                
+           
+            
+            
+    
+    
+    
+    
+        </div>
+    </nav>
+    <div class="container" >
+        <h1 style="text-align:center">🎤Audio Sentiment Analysis 🎙</h1>
+        <!-- <div class="row desc">
+            <div class="col-xs-6 ">
+                <h3 class="text-blod"style="font-size:50px; "></h3>
+                <p style="color:rgb(14, 13, 13)">
+                </p>
+            </div>
+            <div class="col-xs-6">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freecodecamp.org%2Fnews%2Fwhat-is-sentiment-analysis-a-complete-guide-to-for-beginners%2F&psig=AOvVaw29K4S9c2KXxbjP1d1PQTj1&ust=1648302940796000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLDjpdez4fYCFQAAAAAdAAAAABAD" style="width: 100%;" />
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+            <a href="https://www.nitorinfotech.com/"> nitorinfotech.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>
